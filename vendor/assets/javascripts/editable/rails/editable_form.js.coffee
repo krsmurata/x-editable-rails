@@ -31,6 +31,8 @@ unless EditableForm
           obj[nestedName + '_attributes'] = nested
         else if myName != ''
           obj[myName] = myValue
+        else
+          obj = myValue
 
         params[model] = obj
 
