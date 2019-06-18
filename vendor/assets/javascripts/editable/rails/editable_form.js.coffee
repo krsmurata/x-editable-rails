@@ -29,7 +29,7 @@ unless EditableForm
             nested['locale'] = nestedLocale
 
           obj[nestedName + '_attributes'] = nested
-        else
+        else if myName != ''
           obj[myName] = myValue
 
         params[model] = obj
